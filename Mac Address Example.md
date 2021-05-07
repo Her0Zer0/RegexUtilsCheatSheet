@@ -24,4 +24,10 @@ var test_mac_addresses=[
 test_mac_addresses.forEach((mac)=>{
     console.log(`${mac} matched: ${mac.match(mac_address_pattern) != null}`);
 });
+
+// a1:b2:c3:d4:e5:f6 matched: true
+// fe-0E-ab-10-0d-EE matched: true
+// a1.b2.c3.d4.e5.f6 matched: false
+// a1|b2|c3|d4|e5|f6 matched: false
+
 ```
