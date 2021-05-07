@@ -26,4 +26,11 @@ test_ip_addresses.forEach((ip)=>{
     console.log(`${ip} matched: ${ip.match(ip_pattern) != null}`);
 });
 
+// 172.168.10.28 matched: true
+// 192.18.1.233 matched: true
+// 10.168.10.28 matched: true
+// 8.8.0.8 matched: true
+// 172:168:10:28 matched: false
+// 172|168|10|28 matched: false
+
 ```
